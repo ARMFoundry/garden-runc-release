@@ -33,7 +33,7 @@
 [submodule "src/code.cloudfoundry.org/garden-integration-tests"]
 	path = src/code.cloudfoundry.org/garden-integration-tests
 	url = https://github.com/cloudfoundry/garden-integration-tests
-	branch = master
+	branch = connection-reset
 [submodule "src/github.com/golang/protobuf"]
 	path = src/github.com/golang/protobuf
 	url = https://github.com/golang/protobuf
