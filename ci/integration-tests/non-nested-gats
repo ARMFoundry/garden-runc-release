@@ -10,7 +10,7 @@ export PATH=$PWD/bin:$PATH
 
 cd src/code.cloudfoundry.org/garden-integration-tests
 
-cmd="ginkgo --nodes=${GINKGO_NODES:-8} --failOnPending --randomizeSuites --randomizeAllSpecs -stream"
+cmd="ginkgo --nodes=${GINKGO_NODES:-8} --failOnPending --randomizeSuites --randomizeAllSpecs --focus='forwards the exit status even if stdin is still being written' --focus='when OverrideContainerLimits is not specified on the pea' -stream"
 if [ -n "${SLOW_MOBIUS_TIME_LIMIT_SECONDS:-}" ]; then
   cmd="$base/gr-release-connection-reset/ci/helpers/slowmobius $cmd"
 fi
