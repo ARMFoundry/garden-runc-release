@@ -1,2 +1,23 @@
+---
+image_resource:
+  type: docker-image
+  source:
+    repository: cfgarden/garden-ci-ubuntu
+    tag: latest
+
+platform: linux
+
+inputs:
+- name: gr-release-connection-reset
+
+params:
+  DEPLOYMENT:
+  GARDEN_PORT: 7777
+  BOSH_CLIENT_SECRET:
+  BOSH_ENVIRONMENT:
+  BOSH_CA_CERT:
+  BOSH_GW_PRIVATE_KEY:
+  FILEPATH:
+
 run:
-  path: gr-release-develop/ci/helpers/open-garden-port
+  path: gr-release-connection-reset/ci/helpers/bosh-cat-file
