@@ -10,4 +10,4 @@ export PATH=$PWD/bin:$PATH
 
 cd src/code.cloudfoundry.org/garden-integration-tests
 
-ginkgo --nodes=${GINKGO_NODES:-8} --failOnPending --randomizeSuites --randomizeAllSpecs "--focus=forwards the exit status even if stdin is still being written|when OverrideContainerLimits is not specified on the pea" -stream
+ginkgo --nodes=${GINKGO_NODES:-8} --failOnPending --randomizeSuites --randomizeAllSpecs "--focus=forwards the exit status even if stdin is still being written|when OverrideContainerLimits is not specified on the pea" -stream --trace
