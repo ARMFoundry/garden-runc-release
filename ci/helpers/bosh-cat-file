@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+
+bosh -d "$DEPLOYMENT" ssh garden -c "sudo cat $FILEPATH"
