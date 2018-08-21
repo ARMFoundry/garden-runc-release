@@ -8,7 +8,7 @@ image_resource:
 platform: linux
 
 inputs:
-- name: gr-release-connection-reset
+- name: gr-release-flake-master
 
 params:
   DEPLOYMENT:
@@ -20,4 +20,4 @@ params:
   FILEPATH:
 
 run:
-  path: gr-release-connection-reset/ci/helpers/bosh-cat-file
+  path: gr-release-flake-master/ci/helpers/bosh-cat-file

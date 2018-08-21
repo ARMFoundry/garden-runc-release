@@ -8,11 +8,11 @@ image_resource:
 platform: linux
 
 inputs:
-- name: gr-release-connection-reset
+- name: gr-release-flake-master
 
 caches:
-- path: gr-release-connection-reset/bin
-- path: gr-release-connection-reset/pkg
+- path: gr-release-flake-master/bin
+- path: gr-release-flake-master/pkg
 
 params:
   GARDEN_ADDRESS: ""
@@ -28,4 +28,4 @@ params:
   SLOW_MOBIUS_TIME_LIMIT_SECONDS:
 
 run:
-  path: gr-release-connection-reset/ci/integration-tests/non-nested-gats
+  path: gr-release-flake-master/ci/integration-tests/non-nested-gats
