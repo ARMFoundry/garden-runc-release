@@ -2,7 +2,7 @@
 set -ex
 
 basedir=$PWD
-grreleasedevelopdir="$basedir"/gr-release-develop
+grreleasedevelopdir="$basedir"/gr-release-flake-master
 
 # shellcheck source=../helpers/device-control
 source "$( dirname "$0" )/../helpers/device-control"

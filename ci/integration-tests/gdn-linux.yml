@@ -8,7 +8,7 @@ image_resource:
     tag: '0.11.12'
 
 inputs:
-- name: gr-release-develop
+- name: gr-release-flake-master
 
 outputs:
 - name: binary
@@ -18,4 +18,4 @@ params:
   SLOW_MOBIUS_TIME_LIMIT_SECONDS:
 
 run:
-  path: gr-release-develop/ci/integration-tests/gdn-linux
+  path: gr-release-flake-master/ci/integration-tests/gdn-linux
