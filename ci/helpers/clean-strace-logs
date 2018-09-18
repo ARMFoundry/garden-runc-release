@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e
+
+export BOSH_CLIENT=admin
+export BOSH_GW_HOST=$BOSH_ENVIRONMENT
+export BOSH_GW_USER=jumpbox
+echo "$BOSH_GW_PRIVATE_KEY" > /tmp/gw_key
+export BOSH_GW_PRIVATE_KEY=/tmp/gw_key
+chmod 0600 /tmp/gw_key
+
+bosh -d "$DEPLOYMENT" ssh garden -c "sudo rm /tmp/stracedebug*"
